@@ -1,3 +1,9 @@
 {
-  "cSpell.words": ["ASYNCDECREMENT", "ASYNCINCREMENT"]
+  "cSpell.words": [
+    "ASYNCDECREMENT",
+    "ASYNCINCREMENT",
+    "GETUSERS",
+    "SAGADECREMENT",
+    "SAGAINCREMENT"
+  ]
 }
