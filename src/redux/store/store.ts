@@ -12,6 +12,4 @@ export const store = createStore(
   composeWithDevTools(applyMiddleware(sagaMiddleware))
 );
 
-console.log(store.getState());
-
 sagaMiddleware.run(rootSaga);
