@@ -5,7 +5,7 @@ import { useTypedSelector } from './hooks/useTypedSelector';
 import {
   decrementCounterAction,
   incrementCounterAction,
-} from './redux/reducers/counterReducer';
+} from './redux/actionCreators/counterCreator';
 
 export const App: FC = () => {
   const dispatch = useDispatch();

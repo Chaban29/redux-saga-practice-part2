@@ -25,12 +25,3 @@ export const counterReducer = (
       return state;
   }
 };
-
-export const incrementCounterAction = (payload: number) => ({
-  type: CounterActions.INCREMENT,
-  payload,
-});
-export const decrementCounterAction = (payload: number) => ({
-  type: CounterActions.DECREMENT,
-  payload,
-});
