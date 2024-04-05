@@ -3,7 +3,7 @@ import { rootReducer } from '../rootReducer/rootReducer';
 import { applyMiddleware } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import { composeWithDevTools } from '@redux-devtools/extension';
-import { rootSaga } from '../saga';
+import { rootWatcher } from '../rootSaga/rootSaga';
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -12,4 +12,4 @@ export const store = createStore(
   composeWithDevTools(applyMiddleware(sagaMiddleware))
 );
 
-sagaMiddleware.run(rootSaga);
+sagaMiddleware.run(rootWatcher);

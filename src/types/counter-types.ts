@@ -12,5 +12,5 @@ export const enum CounterActions {
 export type TypeCounterActions =
   | { type: CounterActions.INCREMENT; payload: number }
   | { type: CounterActions.DECREMENT; payload: number }
-  | { type: CounterActions.SAGAINCREMENT; payload: number }
-  | { type: CounterActions.SAGADECREMENT; payload: number };
+  | { type: CounterActions.SAGAINCREMENT; payload?: number }
+  | { type: CounterActions.SAGADECREMENT; payload?: number };

@@ -9,11 +9,9 @@ export const decrementCounterAction = (payload: number) => ({
   payload,
 });
 
-export const sagaIncrementAction = (payload: number) => ({
+export const sagaIncrementAction = () => ({
   type: CounterActions.SAGAINCREMENT,
-  payload,
 });
-export const sagaDecrementAction = (payload: number) => ({
+export const sagaDecrementAction = () => ({
   type: CounterActions.SAGADECREMENT,
-  payload,
 });

@@ -2,8 +2,8 @@ import { FC } from 'react';
 import { useDispatch } from 'react-redux';
 import { useTypedSelector } from '../../hooks/useTypedSelector';
 import {
-  incrementCounterAction,
-  decrementCounterAction,
+  sagaDecrementAction,
+  sagaIncrementAction,
 } from '../../redux/actionCreators/counterCreator';
 
 export const Counter: FC = () => {
@@ -11,12 +11,12 @@ export const Counter: FC = () => {
   const counter = useTypedSelector((state) => state.counter.count);
 
   const handleIncrement = () => {
-    dispatch(incrementCounterAction(20));
+    dispatch(sagaIncrementAction());
   };
 
   const handleDecrement = () => {
     if (!counter) return;
-    dispatch(decrementCounterAction(10));
+    dispatch(sagaDecrementAction());
   };
   return (
     <div>
