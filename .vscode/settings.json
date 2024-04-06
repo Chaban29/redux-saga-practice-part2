@@ -2,8 +2,11 @@
   "cSpell.words": [
     "ASYNCDECREMENT",
     "ASYNCINCREMENT",
+    "GETTODOS",
     "GETUSERS",
     "SAGADECREMENT",
-    "SAGAINCREMENT"
+    "SAGAINCREMENT",
+    "SETPOPULAR",
+    "Todos"
   ]
 }

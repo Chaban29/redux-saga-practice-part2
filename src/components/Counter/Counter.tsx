@@ -8,7 +8,7 @@ import {
 
 export const Counter: FC = () => {
   const dispatch = useDispatch();
-  const counter = useTypedSelector((state) => state.counter.count);
+  const counter = useTypedSelector((state) => state.counter.count || 0);
 
   const handleIncrement = () => {
     dispatch(sagaIncrementAction());

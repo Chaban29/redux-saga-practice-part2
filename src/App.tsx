@@ -1,13 +1,11 @@
 import { FC } from 'react';
 import './App.css';
-import { Users } from './components/Users/Users';
-import { Counter } from './components/Counter/Counter';
+import { Todos } from './components/Todos/Todos';
 
 export const App: FC = () => {
   return (
     <>
-      <Counter />
-      <Users />
+      <Todos />
     </>
   );
 };
